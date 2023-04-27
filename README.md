@@ -16,8 +16,10 @@ The first layer has 512 units with a ReLU activation function. This layer has an
 The second layer has 10 units with a softmax activation function. This layer is designed to produce a probability distribution over the 10 possible classes (0-9) for the input image.
 The neural network is compiled with the RMSprop optimizer and categorical cross-entropy loss function. 
 The accuracy metric is also specified for evaluating the performance of the model during training.
-Finally, the model is trained on a dataset of images and labels using the fit() method for 25 epochs and a batch size of 128.
+Finally, the model is trained on a dataset of images and labels using the fit() method for 25 epochs and a batch size of 128.  
+
 All this information can be seen in the 'neuralNetwork.py' file, and, of course, it can be changed to try new parameters combinations.
+To do it, uncomment the line "model.save("model")" to get your new model and try it.
 
 ## Visual
   
