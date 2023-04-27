@@ -22,4 +22,4 @@ All this information can be seen in the 'neuralNetwork.py' file, and, of course,
 ## GUI
 Visual example of the application:   
   
-<img width="1000" alt="GUI" src="https://user-images.githubusercontent.com/90279135/234730629-dd2d4a0a-b997-4dca-9902-795010e34103.png">
+<img width="1050" alt="GUI" src="https://user-images.githubusercontent.com/90279135/234730629-dd2d4a0a-b997-4dca-9902-795010e34103.png">
