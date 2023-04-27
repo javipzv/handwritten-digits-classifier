@@ -20,5 +20,5 @@ Finally, the model is trained on a dataset of images and labels using the fit() 
 All this information can be seen in the 'neuralNetwork.py' file, and, of course, it can be changed to try new parameters combinations.
 
 ## GUI
-Visually example of the application:
+Visual example of the application:  
 <img width="574" alt="GUI" src="https://user-images.githubusercontent.com/90279135/234730629-dd2d4a0a-b997-4dca-9902-795010e34103.png">
