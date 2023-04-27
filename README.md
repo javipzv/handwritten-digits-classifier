@@ -20,3 +20,4 @@ Finally, the model is trained on a dataset of images and labels using the fit() 
 All this information can be seen in the 'neuralNetwork.py' file, and, of course, it can be changed to try new parameters combinations.
 
 ## GUI
+Visually example of the application:
