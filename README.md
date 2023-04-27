@@ -19,7 +19,6 @@ The accuracy metric is also specified for evaluating the performance of the mode
 Finally, the model is trained on a dataset of images and labels using the fit() method for 25 epochs and a batch size of 128.
 All this information can be seen in the 'neuralNetwork.py' file, and, of course, it can be changed to try new parameters combinations.
 
-## GUI
-Visual example of the application:   
+## Visual
   
 <img width="1050" alt="GUI" src="https://user-images.githubusercontent.com/90279135/234730629-dd2d4a0a-b997-4dca-9902-795010e34103.png">
