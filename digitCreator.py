@@ -4,7 +4,7 @@ from io import BytesIO
 import numpy as np
 import tensorflow as tf
 
-class DrawingScreen:
+class Classifier_GUI:
     def __init__(self):
         self.model = tf.keras.models.load_model('model')
         self.im = None
@@ -34,22 +34,23 @@ class DrawingScreen:
         im = np.array(im) # Numpy array
         im = abs(im - 255) # Invert color
         im = im / 255 # Escale to 0-1
-        self.im = im.reshape((1, 784))
+        im = im.reshape((1, 784)) # To one dimension
+        self.im = im
         self.classify_digit()
 
     def delete_image(self):
         self.canvas.delete("all")
 
-    def digit_drawer(self):
-        self.master.title("Draw a digit")
+    def draw_digit(self):
+        self.master.title("Digit Classifier")
         self.master.mainloop()
     
     def classify_digit(self):
         pred = self.model.predict(self.im, verbose = False)
-        self.result_drawer(np.argmax(pred))
+        self.write_result(np.argmax(pred))
 
-    def result_drawer(self, digit: int):
+    def write_result(self, digit: int):
         self.label.config(text=f"Digit: {digit}")
 
-drawing = DrawingScreen()
-drawing.digit_drawer()
+drawing = Classifier_GUI()
+drawing.draw_digit()

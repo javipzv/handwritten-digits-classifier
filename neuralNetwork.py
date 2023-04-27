@@ -1,8 +1,3 @@
-from silence_tensorflow import silence_tensorflow
-silence_tensorflow()
-
-####################################
-
 import matplotlib.pyplot as plt
 from keras.datasets import mnist
 from keras.utils import to_categorical
@@ -46,7 +41,7 @@ test_loss, test_acc = model.evaluate(test_images, test_labels)
 print("test_loss: ", test_loss, "\ntest_acc: ", test_acc)
 
 # Viewing results
-plt.xlabel("Época")
-plt.ylabel("Magnitud de pérdida")
+plt.xlabel("Epoch")
+plt.ylabel("Loss")
 plt.plot(hist.history["loss"])
 plt.show()
