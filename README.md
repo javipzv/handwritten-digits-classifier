@@ -26,3 +26,5 @@ The performance advantage of the Convolutional Neural Network (CNN) over a tradi
   <img width="400" src="https://github.com/javipzv/handwritten-digits-classifier/assets/90279135/1f4af576-e7bf-4a71-9edf-ad00bb6b6c12" alt="test_acc">
 </div>
 
+## Aditional
+Out of curiosity, I wanted to see how the convolutional neural network works internally. Therefore, I decided to extract the weights of the first layer to visualize the final filters and see how they were applied to a specific number. Here's the result:
