@@ -17,3 +17,8 @@ In addition to the simple neural network model, a convolutional neural network (
 ## Visual
   
 <img width="569" alt="Captura del modelo" src="https://github.com/javipzv/handwritten-digits-classifier/assets/90279135/8117ac9d-3ad9-4ac9-81b7-17e5ce052d8b">
+
+## Conclusions
+The performance advantage of the Convolutional Neural Network (CNN) over a traditional neural network in the digits recognition task is relatively marginal. This slight improvement can be attributed to the CNN's ability to effectively capture spatial dependencies in the input images, thanks to its convolutional and pooling layers. However, the task of recognizing handwritten digits, while a vision problem, is relatively straightforward even for a standard neural network architecture due to the simplicity of the dataset and the distinct features present in each digit. Let's visualize the results:
+
+
