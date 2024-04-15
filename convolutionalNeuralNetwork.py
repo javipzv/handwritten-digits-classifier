@@ -2,8 +2,7 @@ import matplotlib.pyplot as plt
 from keras.datasets import mnist
 from keras.utils import to_categorical
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2D, Activation
-import tensorflow as tf
+from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2D
 
 # Load the data
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
@@ -53,4 +52,25 @@ print("test_loss: ", test_loss, "\ntest_acc: ", test_acc)
 plt.xlabel("Epoch")
 plt.ylabel("Loss")
 plt.plot(hist.history["loss"])
+plt.show()
+
+# Effect of the first convolution filters
+from scipy import signal
+test_img = test_images[1].reshape((28, 28))
+
+# Filters
+plt.figure(figsize = (18, 8))
+for i in range(32):
+  filter = CNN.layers[0].get_weights()[0][:, :, :, i].reshape((4, 4))
+  plt.subplot(4, 8, i+1)
+  plt.imshow(filter, cmap='gray')
+plt.show()
+
+# Convolutions
+plt.figure(figsize = (18, 8))
+for i in range(32):
+  filter = CNN.layers[0].get_weights()[0][:, :, :, i].reshape((4, 4))
+  res = signal.correlate2d(test_img, filter)
+  plt.subplot(4, 8, i+1)
+  plt.imshow(res, cmap='gray')
 plt.show()
