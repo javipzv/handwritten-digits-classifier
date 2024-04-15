@@ -34,4 +34,5 @@ Out of curiosity, I wanted to see how the convolutional neural network works int
   <img width="400" src="https://github.com/javipzv/handwritten-digits-classifier/assets/90279135/a905afe4-f538-44a6-8b91-6acb3793a905" alt="convolutions">
 </div>
 
+
 We can observe how the filters of the first layer are gradually selecting shapes, which may seem random at first glance, from the input image. This process of selecting shapes constitutes the convolutional process, where the filters detect local patterns in the image, such as edges, curves, or textures. As these patterns propagate through the subsequent layers of the convolutional neural network, they are combined and refined to form increasingly abstract and complex representations of objects in the image. This hierarchical learning process allows the network to capture discriminative features relevant for distinguishing between different handwritten digits.
