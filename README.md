@@ -28,7 +28,7 @@ The performance advantage of the Convolutional Neural Network (CNN) over a tradi
 </div>
 
 ## Aditional
-Out of curiosity, I wanted to see how the convolutional neural network works internally. Therefore, I decided to extract the weights of the first layer to visualize the final filters and see how they were applied to a specific number. Here's the result:
+Out of curiosity, I wanted to see how the convolutional neural network works internally. Therefore, I decided to extract the weights of the first layer to visualize the final filters (code in *convolutionalNeuralNetwork.py*) and see how they were applied to a specific number. Here's the result:
 
 <div style="display:flex; justify-content: center;">
   <img width="400" src="https://github.com/javipzv/handwritten-digits-classifier/assets/90279135/efdf4611-f723-4140-a753-8f127fc8c3e1" alt="filters">
