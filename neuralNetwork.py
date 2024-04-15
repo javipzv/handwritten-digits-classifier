@@ -7,7 +7,7 @@ import tensorflow as tf
 
 # Input layer of one dimension
 train_images = train_images.reshape((60000, 28*28))
-test_images = test_images.reshape((10000,28*28))
+test_images = test_images.reshape((10000, 28*28))
 
 # Scale the data
 train_images = train_images.astype("float32")/255
@@ -17,27 +17,27 @@ test_images = test_images.astype("float32")/255
 train_labels = to_categorical(train_labels)
 test_labels = to_categorical(test_labels)
 
-# Creating the neural net
+# Creating the neural network
 oculta1 = tf.keras.layers.Dense(units=512, activation="relu", input_shape = (28*28, ))
 salida = tf.keras.layers.Dense(units=10, activation="softmax")
-model = tf.keras.Sequential([oculta1, salida])
+NN = tf.keras.Sequential([oculta1, salida])
 
 # Compile the model
-model.compile(
+NN.compile(
     optimizer = "rmsprop",
     loss = "categorical_crossentropy",
     metrics = ["accuracy"])
 
 # Training
-hist = model.fit(train_images,
+hist = NN.fit(train_images,
          train_labels,
          epochs = 25,
          batch_size = 128)
 
-# model.save("model")
+# NN.save("model_NN")
 
 # Evaluating the model
-test_loss, test_acc = model.evaluate(test_images, test_labels)
+test_loss, test_acc = NN.evaluate(test_images, test_labels)
 print("test_loss: ", test_loss, "\ntest_acc: ", test_acc)
 
 # Viewing results
