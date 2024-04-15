@@ -16,4 +16,4 @@ In addition to the simple neural network model, a convolutional neural network (
 
 ## Visual
   
-<img width="1050" alt="GUI" src="https://user-images.githubusercontent.com/90279135/234730629-dd2d4a0a-b997-4dca-9902-795010e34103.png">
+<img width="569" alt="Captura del modelo" src="https://github.com/javipzv/handwritten-digits-classifier/assets/90279135/8117ac9d-3ad9-4ac9-81b7-17e5ce052d8b">
